@@ -175,6 +175,30 @@ table tr:hover {
 
 /* Ajustes generales para pantallas pequeñas */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden; /* Evita el scroll horizontal */
+    }
+
+    .intro, .instructions {
+        width: 95%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    h2, h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
     #controls {
         width: 95%;
         padding: 1rem;
@@ -202,19 +226,23 @@ table tr:hover {
     }
 
     #map {
-        height: 400px; /* Aumentar altura del mapa en móviles */
+        height: 350px; /* Aumenta la altura en móviles */
         width: 95%;
     }
 
-    .intro, .instructions {
-        width: 95%;
-        padding: 1rem;
+    img {
+        max-width: 100%; /* Asegura que las imágenes sean responsivas */
+        height: auto;
+        display: block;
+        margin: 0 auto;
     }
 
     .watermark {
         font-size: 0.8rem;
+        text-align: center;
     }
 }
+
 
     </style>
 </head>
