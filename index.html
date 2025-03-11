@@ -172,18 +172,49 @@ table tr:hover {
     }
     
 }
+
+/* Ajustes generales para pantallas pequeñas */
 @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-            .intro, .instructions {
-                width: 95%;
-                padding: 1rem;
-            }
-            #map {
-                height: 350px;
-            }
-        }
+    #controls {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    label {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    input, select {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    table {
+        font-size: 0.9rem;
+        overflow-x: auto;
+        display: block;
+        white-space: nowrap;
+    }
+
+    #map {
+        height: 400px; /* Aumentar altura del mapa en móviles */
+        width: 95%;
+    }
+
+    .intro, .instructions {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .watermark {
+        font-size: 0.8rem;
+    }
+}
 
     </style>
 </head>
